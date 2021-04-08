@@ -1,0 +1,9 @@
+{
+    "env":{
+        "url" : "https://gothamist-vue.demo.nypr.digital/"
+    },
+
+    "reporter" : "mochawesome",
+
+    "chromeWebSecurity": false
+}

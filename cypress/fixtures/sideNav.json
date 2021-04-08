@@ -1,0 +1,40 @@
+{
+    "donateButton": "div[class='menu-button'] > div:nth-child(2) > a",
+    "donatePageVerifyingText": "Gothamist is reader-supported local news.",
+
+    "sendAStoryIdea":   "div[class='menu-component'] > div:nth-child(2) > a",
+    "sendAStoryIdeaVerifyingText": "tips@gothamist.com",
+
+    "advertising": "div[class='menu-secondary-navigation']> ul > li:nth-child(1) > a",
+    "advertisingVerifyingText": "Hey there, we're happy you're here.",
+
+    "rssFeed": "div[class='menu-secondary-navigation']> ul > li:nth-child(3) > a",
+    "rssFeedVerifyingText": "The latest stories from gothamist.com",
+
+    "diversity": "div[class='menu-secondary-navigation']> ul > li:nth-child(5) > a",
+    "diversityVerifyingText": "A MESSAGE FROM OUR PRESIDENT AND CEO",
+
+    "facebook": ".c-share-tools__group > a:nth-child(1)",
+    "facebookVerifyingText": "Gothamist",
+
+    "twitter": ".c-share-tools__group > a:nth-child(2)",
+    "twitterVerifyingText": "Gothamist",
+
+
+    "instagram": ".c-share-tools__group > a:nth-child(3)",
+    "instagramVerifyingText": "gothamist",
+
+    "youtube": ".c-share-tools__group > a:nth-child(4)",
+    "youtubeVerifyingText": "Gothamist",
+
+    "termsOfUse": ".menu-terms-links > ul > li:nth-child(1) > a",
+    "termsOfUseVerifyingText":  "New York Public Radio’s Digital Platforms",
+
+    "privacyPolicy": ".menu-terms-links > ul > li:nth-child(2) > a",
+    "privacyPolicyVerifyingText": "New York Public Radio (NYPR) takes your privacy seriously",
+
+    "accessibility": ".menu-terms-links > ul > li:nth-child(3) > a",
+    "accessibilityVerifyingText": "New York Public Radio is committed to making our websites and our web content accessible"
+
+
+}

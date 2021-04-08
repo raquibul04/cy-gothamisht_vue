@@ -1,0 +1,19 @@
+{
+  "name": "gothamist-vue-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules//.bin//cypress run",
+    "testWithReports": "npm run test --reporter mochawesome",
+    "headedTestChrome": "npm run test -- --headed --browser chrome --reporter mochawesome"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^6.9.1"
+  },
+  "dependencies": {
+    "mochawesome": "^6.2.2"
+  },
+  "description": ""
+}
