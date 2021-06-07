@@ -1,9 +1,14 @@
 {
-    "env":{
-        "url" : "https://gothamist-vue.demo.nypr.digital/"
-    },
+  "env": {
+    "url": "https://gothamist-vue.demo.nypr.digital"
+  },
 
-    "reporter" : "mochawesome",
+  "reporter": "mochawesome",
 
-    "chromeWebSecurity": false
+  "chromeWebSecurity": false,
+
+  "retries": {
+    "runMode": 2,
+    "openMode": 2
+  }
 }

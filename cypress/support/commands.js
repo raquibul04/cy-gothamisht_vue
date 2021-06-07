@@ -23,9 +23,39 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-Cypress.Commands.add('clickAndVerify',function(elementLocator,verifyingText){
-    cy.get('.menu-panel')
-    .find(elementLocator).invoke('removeAttr', 'target').click()
-    cy.contains(verifyingText)
+Cypress.Commands.add(
+  "clickAndVerifyFromSideNav_1",
+  function (elementLocator, verifyingText) {
+    cy.get(".menu-panel")
+      .find(elementLocator)
+      .invoke("removeAttr", "target")
+      .click();
+    cy.contains(verifyingText);
+  }
+);
+Cypress.Commands.add(
+  "clickAndVerifyFromSideNav_2",
+  function (elementLocator, verifyingText) {
+    cy.get(".menu-panel").find(elementLocator).click();
+    cy.contains(verifyingText);
+  }
+);
 
-})
+Cypress.Commands.add(
+  "clickAndVerifyFromFooter_1",
+  function (elementLocator, verifyingText) {
+    cy.get(".c-main-footer")
+      .find(elementLocator)
+      .invoke("removeAttr", "target")
+      .click();
+    cy.contains(verifyingText);
+  }
+);
+
+Cypress.Commands.add(
+  "clickAndVerifyFromFooter_2",
+  function (elementLocator, verifyingText) {
+    cy.get(".c-main-footer").find(elementLocator).click();
+    cy.contains(verifyingText);
+  }
+);
