@@ -1,6 +1,7 @@
 {
   "env": {
-    "url": "https://gothamist-vue.demo.nypr.digital"
+    "url": "https://gothamist-vue.demo.nypr.digital",
+    "tag": "https://gothamist-vue.demo.nypr.digital/tags/dogs/"
   },
 
   "reporter": "mochawesome",
@@ -9,6 +10,6 @@
 
   "retries": {
     "runMode": 2,
-    "openMode": 2
+    "openMode": 1
   }
 }
