@@ -43,6 +43,7 @@ Cypress.Commands.add(
     cy.contains(verifyingText);
   }
 );
+
 /// Clicking and verifying the links from the footer
 Cypress.Commands.add(
   "clickAndVerifyFromFooter_1",
@@ -54,6 +55,7 @@ Cypress.Commands.add(
     cy.contains(verifyingText);
   }
 );
+
 /// Clicking and verifying the links from the footer that does not open in a new tab
 Cypress.Commands.add(
   "clickAndVerifyFromFooter_2",
@@ -62,6 +64,7 @@ Cypress.Commands.add(
     cy.contains(verifyingText);
   }
 );
+
 /// Clicking on an article and verifying the follwing page title to make sure clicking on an article is working
 Cypress.Commands.add("clickArticleAndVerify", function () {
   let title;
@@ -72,7 +75,7 @@ Cypress.Commands.add("clickArticleAndVerify", function () {
     .then(function (title1) {
       title = title1.text().trim();
       cy.log(title);
-      cy.get(".card").find("a").eq(1).click();
+      cy.get(".card-title-link").find("span").eq(0).click();
       cy.wait(1000);
     });
   cy.get(".article-title").then(function (title2) {
@@ -81,10 +84,12 @@ Cypress.Commands.add("clickArticleAndVerify", function () {
     expect(title).equals(titleHeader);
   });
 });
+
 ///Article number validation
 Cypress.Commands.add("CardNumberValidation", function (number) {
   cy.get(".card").should("have.length", number);
 });
+
 /// Clicking and verifying the Breadcrumbs from a page to make sure it navigates to the correct topics
 Cypress.Commands.add("clickBreadcrumbAndVerify", function () {
   let title;
@@ -102,4 +107,12 @@ Cypress.Commands.add("clickBreadcrumbAndVerify", function () {
     cy.log(titleHeader);
     expect(title).equals(titleHeader);
   });
+});
+
+///Searching an item from the /search page
+Cypress.Commands.add("searchAnItem", function (search) {
+  cy.get(".c-search__input").type(search);
+  cy.get(".c-search__icon").click();
+  cy.wait(1000);
+  cy.get(".card").should("have.length", 12);
 });
