@@ -1,9 +1,9 @@
 /// <reference types="Cypress" />
 
-import tagPagePO from "../../support/pageObjects/tagPagePO";
+import commonPagePO from "../../support/pageObjects/commonPagePO";
 
 describe("This file will hold all the test scripts involving the tag page", function () {
-  const tagPage = new tagPagePO();
+  const commonPage = new commonPagePO();
   beforeEach(function () {
     cy.visit(Cypress.env("tag"));
   });
@@ -17,7 +17,7 @@ describe("This file will hold all the test scripts involving the tag page", func
   });
 
   it("More Resuts button should be working on the tag page", function () {
-    tagPage.clickingLoadMoreButton();
+    commonPage.clickingLoadMoreButton();
     cy.CardNumberValidation(24);
   });
 

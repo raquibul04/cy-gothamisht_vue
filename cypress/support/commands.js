@@ -95,11 +95,11 @@ Cypress.Commands.add("clickBreadcrumbAndVerify", function () {
   let title;
   let titleHeader;
   cy.get(".tag:not(.sponsored)")
-    .eq(1)
+    .eq(0)
     .then(function (title1) {
       title = title1.text().trim();
       cy.log(title);
-      cy.get(".tag:not(.sponsored)").eq(1).click();
+      cy.get(".tag:not(.sponsored)").eq(0).click();
       cy.wait(1000);
     });
   cy.get(".c-section__heading").then(function (title2) {
