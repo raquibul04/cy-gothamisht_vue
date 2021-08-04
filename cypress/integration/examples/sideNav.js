@@ -32,6 +32,51 @@ describe("This file will hold all the test scripts involving the side nav", func
     );
   });
 
+  it("Users should be able to navigate to the News link from the side nav", function () {
+    sideNav.getSideNav().click();
+    sideNav.verifyingSideNav().should("be.visible");
+    cy.clickAndVerifyFromSideNav_2(
+      this.locator.newsLinkLocator,
+      this.locator.newsLinkverifyingText
+    );
+  });
+
+  it("Users should be able to navigate to the Arts & Entertainment link from the side nav", function () {
+    sideNav.getSideNav().click();
+    sideNav.verifyingSideNav().should("be.visible");
+    cy.clickAndVerifyFromSideNav_2(
+      this.locator.artsAndEntertainmentLinkLocator,
+      this.locator.artsAndEntertainmentLinkverifyingText
+    );
+  });
+
+  it("Users should be able to navigate to the Food link from the side nav", function () {
+    sideNav.getSideNav().click();
+    sideNav.verifyingSideNav().should("be.visible");
+    cy.clickAndVerifyFromSideNav_2(
+      this.locator.foodLinkLocator,
+      this.locator.foodLinkverifyingText
+    );
+  });
+
+  it("Users should be able to navigate to the Election 2021 link from the side nav", function () {
+    sideNav.getSideNav().click();
+    sideNav.verifyingSideNav().should("be.visible");
+    cy.clickAndVerifyFromSideNav_2(
+      this.locator.election2021LinkLocator,
+      this.locator.election2021LinkverifyingText
+    );
+  });
+
+  it("Users should be able to navigate to the Newsletter link from the side nav", function () {
+    sideNav.getSideNav().click();
+    sideNav.verifyingSideNav().should("be.visible");
+    cy.clickAndVerifyFromSideNav_1(
+      this.locator.newsletterLinkLocator,
+      this.locator.newsletterLinkverifyingText
+    );
+  });
+
   it("Advertising link from the side nav should be working", function () {
     sideNav.getSideNav().click();
     sideNav.verifyingSideNav().should("be.visible");

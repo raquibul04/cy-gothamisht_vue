@@ -39,5 +39,20 @@
   "privacyPolicyVerifyingText": "New York Public Radio (NYPR) takes your privacy seriously",
 
   "accessibility": ".menu-terms-links > ul > li:nth-child(3) > a",
-  "accessibilityVerifyingText": "New York Public Radio is committed to making our websites and our web content accessible"
+  "accessibilityVerifyingText": "New York Public Radio is committed to making our websites and our web content accessible",
+
+  "newsLinkLocator": "div[class='menu-primary-navigation']>ul>li:nth-child(1)>a",
+  "newsLinkverifyingText": "News",
+
+  "artsAndEntertainmentLinkLocator": "div[class='menu-primary-navigation']>ul>li:nth-child(2)>a",
+  "artsAndEntertainmentLinkverifyingText": "Arts & Entertainment",
+
+  "foodLinkLocator": "div[class='menu-primary-navigation']>ul>li:nth-child(3)>a",
+  "foodLinkverifyingText": "Food",
+
+  "election2021LinkLocator": "div[class='menu-primary-navigation']>ul>li:nth-child(4)>a",
+  "election2021LinkverifyingText": "Election 2021",
+
+  "newsletterLinkLocator": "div[class='menu-primary-navigation']>ul>li:nth-child(5)>a",
+  "newsletterLinkverifyingText": "Newsletter"
 }

@@ -1,9 +1,8 @@
 {
   "env": {
-    "url": "https://gothamist-vue.demo.nypr.digital",
-    "tag": "https://gothamist-vue.demo.nypr.digital/tags/dogs/",
-    "search": "https://gothamist-vue.demo.nypr.digital/search"
-    
+    "url": "https://gothamist-vue.prod.nypr.digital",
+    "tag": "https://gothamist-vue.prod.nypr.digital/tags/dogs/",
+    "search": "https://gothamist-vue.prod.nypr.digital/search"
   },
 
   "reporter": "mochawesome",
@@ -13,5 +12,8 @@
   "retries": {
     "runMode": 2,
     "openMode": 1
-  }
+  },
+
+  "viewportWidth": 1433,
+  "viewportHeight": 830
 }

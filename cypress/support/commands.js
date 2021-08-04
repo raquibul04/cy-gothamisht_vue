@@ -85,7 +85,7 @@ Cypress.Commands.add("clickArticleAndVerify", function () {
   });
 });
 
-///Article number validation
+///Article number validation on a page
 Cypress.Commands.add("CardNumberValidation", function (number) {
   cy.get(".card").should("have.length", number);
 });
@@ -116,3 +116,19 @@ Cypress.Commands.add("searchAnItem", function (search) {
   cy.wait(1000);
   cy.get(".card").should("have.length", 12);
 });
+
+///Verifying the number of articles appering in the Featured section of the homepage
+Cypress.Commands.add("verifyingTheNumberOfArticles", function (number) {
+  cy.get(".c-featured-blocks")
+    .find(".card-title")
+    .should("have.length", number);
+});
+
+///verifing the header links from homepage
+Cypress.Commands.add(
+  "verifyingHeaderLinks",
+  function (elementLocator, verifyingText) {
+    cy.get(elementLocator).click();
+    cy.contains(verifyingText);
+  }
+);
