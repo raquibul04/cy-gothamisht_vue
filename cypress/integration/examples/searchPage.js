@@ -23,7 +23,7 @@ describe("This file will hold all the test scritps involving the search page", f
     cy.CardNumberValidation(12);
   });
 
-  it("More Resuts button should be working on the search page", function () {
+  it("More Results button should be working on the search page", function () {
     cy.searchAnItem(this.locator.searchItem);
     commonPage.clickingLoadMoreButton();
     cy.CardNumberValidation(24);

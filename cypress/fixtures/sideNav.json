@@ -17,7 +17,7 @@
   "rssFeed": "div[class='menu-secondary-navigation']> ul > li:nth-child(3) > a",
   "rssFeedVerifyingText": "The latest stories from gothamist.com",
 
-  "diversity": "div[class='menu-secondary-navigation']> ul > li:nth-child(5) > a",
+  "diversity": "div[class='menu-secondary-navigation']> ul > li:nth-child(4) > a",
   "diversityVerifyingText": "A MESSAGE FROM OUR PRESIDENT AND CEO",
 
   "facebook": ".c-share-tools__group > a:nth-child(1)",
@@ -27,7 +27,7 @@
   "twitterVerifyingText": "Gothamist",
 
   "instagram": ".c-share-tools__group > a:nth-child(3)",
-  "instagramVerifyingText": "gothamist",
+  "instagramVerifyingText": "Instagram",
 
   "youtube": ".c-share-tools__group > a:nth-child(4)",
   "youtubeVerifyingText": "Gothamist",

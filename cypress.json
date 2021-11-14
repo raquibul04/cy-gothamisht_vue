@@ -1,8 +1,10 @@
 {
   "env": {
-    "url": "https://gothamist-vue.prod.nypr.digital",
-    "tag": "https://gothamist-vue.prod.nypr.digital/tags/dogs/",
-    "search": "https://gothamist-vue.prod.nypr.digital/search"
+    "url": "https://gothamist.com",
+    "tag": "https://gothamist.com/tags/dogs/",
+    "search": "https://gothamist.com/search",
+    "article": "https://gothamist.com/news/eric-adams-election-night-stage-guide-to-key-players",
+    "gallery": "https://gothamist.com/arts-entertainment/photos-rockefeller-center-christmas-tree-has-arrived-2021"
   },
 
   "reporter": "mochawesome",

@@ -23,6 +23,7 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
 /// Clicking and verifying the links from the side navigation
 Cypress.Commands.add(
   "clickAndVerifyFromSideNav_1",
@@ -124,7 +125,7 @@ Cypress.Commands.add("verifyingTheNumberOfArticles", function (number) {
     .should("have.length", number);
 });
 
-///verifing the header links from homepage
+///verifying the header links from homepage
 Cypress.Commands.add(
   "verifyingHeaderLinks",
   function (elementLocator, verifyingText) {
@@ -132,3 +133,55 @@ Cypress.Commands.add(
     cy.contains(verifyingText);
   }
 );
+
+Cypress.Commands.add(
+  "verifyingAuthorName",
+  function (elementLocator, verifyingText) {
+    cy.get(elementLocator).eq(0).click();
+    cy.contains(verifyingText);
+  }
+);
+
+Cypress.Commands.add(
+  "verifyingSection",
+  function (elementLocator, numberOfArticles) {
+    cy.get(elementLocator).should("have.length", numberOfArticles);
+  }
+);
+
+Cypress.Commands.add("verifyingReadMoreIn", function (link) {
+  let title;
+  let titleHeader;
+  cy.get(".read-more-in-links")
+    .find("li")
+    .eq(link)
+    .then(function (title1) {
+      title = title1.text().trim();
+      cy.log(title);
+      cy.get(".read-more-in-links").find("li").eq(link).click();
+    });
+  cy.get(".c-section__heading").then(function (title2) {
+    titleHeader = title2.text().trim();
+    cy.log(titleHeader);
+    expect(title).equals(titleHeader);
+  });
+});
+
+Cypress.Commands.add("articleSocialSharing", function (link, verifyingText) {
+  cy.get(".article-lead-asset>div:nth-child(1)>div>button")
+    .eq(link)
+    .invoke("removeAttr", "target")
+    .click();
+  cy.contains(verifyingText);
+});
+
+Cypress.Commands.add("verifyingPhotoGallery", function (elementLocator) {
+  cy.get(elementLocator).click();
+  cy.url().should("include", "?image");
+});
+Cypress.Commands.add("galleryPageToArticlePage", function (elementLocator) {
+  cy.get(".article-metadata-photos>a").click();
+  cy.url().should("include", "?image");
+  cy.get(elementLocator).click();
+  cy.url().should("not.include", "?image");
+});

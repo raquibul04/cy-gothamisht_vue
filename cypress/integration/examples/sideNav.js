@@ -113,14 +113,14 @@ describe("This file will hold all the test scripts involving the side nav", func
     );
   });
 
-  it("Staff link from the side nav should be working", function () {
-    sideNav.getSideNav().click();
-    sideNav.verifyingSideNav().should("be.visible");
-    cy.clickAndVerifyFromSideNav_2(
-      this.locator.staff,
-      this.locator.staffVerifyingText
-    );
-  });
+  // it("Staff link from the side nav should be working", function () {
+  //   sideNav.getSideNav().click();
+  //   sideNav.verifyingSideNav().should("be.visible");
+  //   cy.clickAndVerifyFromSideNav_2(
+  //     this.locator.staff,
+  //     this.locator.staffVerifyingText
+  //   );
+  // });
 
   it("Facebook link from the side nav should be working", function () {
     sideNav.getSideNav().click();

@@ -26,12 +26,12 @@ describe("This file will hold all the test scripts involving the footer", functi
       this.locator.rssFeedVerifyingText
     );
   });
-  it("Staff link from the footer should be working", function () {
-    cy.clickAndVerifyFromFooter_2(
-      this.locator.staff,
-      this.locator.staffVerifyingText
-    );
-  });
+  // it("Staff link from the footer should be working", function () {
+  //   cy.clickAndVerifyFromFooter_2(
+  //     this.locator.staff,
+  //     this.locator.staffVerifyingText
+  //   );
+  // });
   it("Facebook link from the footer should be working", function () {
     cy.clickAndVerifyFromFooter_1(
       this.locator.facebook,

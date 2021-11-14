@@ -1,0 +1,7 @@
+{
+  "photoIcon": ".article-metadata-photos>a",
+  "viewAll": ".gallery-preview-view-all",
+  "closeIcon": ".gallery-close",
+  "backToArticleTitle": ".gallery-back-to-link",
+  "backToArticle": ".back-to-article"
+}

@@ -16,7 +16,7 @@ describe("This file will hold all the test scripts involving the tag page", func
     cy.CardNumberValidation(12);
   });
 
-  it("More Resuts button should be working on the tag page", function () {
+  it("More Results button should be working on the tag page", function () {
     commonPage.clickingLoadMoreButton();
     cy.CardNumberValidation(24);
   });

@@ -1,0 +1,18 @@
+{
+  "authorNameLocator": ".byline-author",
+  "authorName": "Elizabeth Kim",
+
+  "recentInNews": ".recirculation-module-group-1>div",
+  "recentInNewsNumbers": "3",
+
+  "featuredInNews": ".recirculation-module-group-2",
+  "featuredInNewsNumbers": "1",
+
+  "facebookVerifyingText": "Log into your Facebook account to share.",
+
+  "twitterVerifyingText": "Want to log in first?",
+
+  "redditVerifyingText": "New to Reddit?",
+
+  "emailVerifyingText": "Secure, smart, and easy to use email"
+}

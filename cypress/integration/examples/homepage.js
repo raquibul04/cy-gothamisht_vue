@@ -48,14 +48,14 @@ describe("This file will hold all the test scripts involving the homepage", func
     );
   });
 
-  it("Users should be able to navigate to the Election 2021 page from the top header", function () {
-    cy.verifyingHeaderLinks(
-      this.locator.election2021LinkLocator,
-      this.locator.election2021LinkverifyingText
-    );
-  });
+  // it("Users should be able to navigate to the Election 2021 page from the top header", function () {
+  //   cy.verifyingHeaderLinks(
+  //     this.locator.election2021LinkLocator,
+  //     this.locator.election2021LinkverifyingText
+  //   );
+  // });
 
-  it("Users should be able to navigate to the Food page from the top header", function () {
+  it("Users should be able to navigate to the Newsletter page from the top header", function () {
     homepage.getNewsletterLink().invoke("removeAttr", "target").click();
     cy.contains(this.locator.newsletterLinkverifyingText);
   });
